@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			
+			body{
+					height: 1000px;
+					width: 1000px;
+			}
+			#div1{
+				height: 400px;
+				width: 400px;
+				background-color:blue;
+				/*固定定位：参照浏览器定位，会脱离文档(不占空间)*/
+				position: fixed;
+			}
+			#div2{
+				height: 200px;
+				width: 200px;
+				background-color:green;
+				/*相对定位：参照自己初始的定位，不会脱离文档(占空间)*/
+				position: relative;
+				left:200px;
+				top: 200px;
+			}
+			#div3{
+				height: 500px;
+				width: 200px;
+				background-color:yellow;
+				/*绝对定位：参照外层元素定位，如果外层元素没有定位 会参照bady定位，会脱离文档(不占空间)*/
+				position: absolute;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div3">
+			
+		</div>
+		<div id="div1">
+			
+		</div>
+		<div id="div2">
+			
+		</div>
+	</body>
+</html>

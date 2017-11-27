@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				left:200px;
+				top:200px;
+				background-color: red;
+				/*过渡：2s匀速运动*/
+				transition: 2s linear;
+			}
+			/*悬浮事件*/
+			div:hover{
+				background-color: greenyellow;
+				/*使属性向2D或者3D转化*/
+				transform: translateX(300px) rotate(900deg) scale(2);
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+</html>
