@@ -1,0 +1,54 @@
+/*通配符 选择所有标签*/
+*{	
+	/*外边距*/
+	margin: 0;
+	/*内边距*/
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background-image: url(../img/012.png);
+	/*设置背景位置*/
+	background-position: center center;
+	/*背景是否平铺*/
+	background-repeat: no-repeat;
+	/*背景尺寸*/
+	background-size: cover;
+	/*嵌套元素呈3D显示*/
+	transform-style: preserve-3d;
+	/*距离z轴原点的距离*/
+	perspective: 500px;
+	/*溢出的内容全部隐藏*/
+	overflow: hidden;
+}
+.container{
+	width: 900px;
+	margin: 200px auto;
+	transform-style: preserve-3d;
+	transform: rotateY(15deg) rotateX(15deg);
+}
+.pic{
+	width: 100px;
+	margin: 50px 0 0 100px;
+	background-color: #FFF;
+	padding: 5px;
+	box-shadow: 10px 10px 3px rgba(50,50,50,0.7);
+	transition: 0.5s;
+}
+.pic1:hover, .pic5:hover{
+	transform: rotateX(-15deg) rotateY(-15deg) scale(1.5);
+}
+.pic2:hover, .pic6:hover{
+	transform: rotateX(-15deg) rotateY(-30deg) scale(2);
+}
+.pic3:hover, .pic7:hover{
+	transform: rotateX(-15deg) rotateY(-15deg) scale(2.5);
+}
+.pic4:hover, .pic8:hover{
+	transform: rotateX(-15deg) rotateY(-15deg) scale(3);
+}
+
+
