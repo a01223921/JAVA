@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8"><!--UTF-8编码集-->
+		<!--声明当前网页的三严肃 SEO-->
+		<meta name="Keywords" content="关键词"><!--seo优化-->
+		<meta name="Description" content="描述信息">
+		<title>在线云音乐</title>
+		<!--css样式 层叠样式表 -->
+		<style>
+		*{margin:0;padding:0;}/*解决浏览器兼容问题，*代表全部
+			margin:上 右 下 左 ;
+			margin:上 左右 下 ;
+			margin:上下 左右 ;
+			margin:四个方向;
+		*/
+		 #Music{width:900px;height:600px;margin:80px auto;}
+		 #Music .MusicL{width:650px;height:520px;background:url("images/music.gif")center;float:left;}
+		 
+		 #Music .MusicR{width:250px;height:520px;background:rgba(0,0,0,0.7);float:right;}
+		 #Music .MusicR ul{list-style:none;width:140px;margin:20px auto;color:#ffffff;font-weight:700;font-family:"宋体";}
+		 #Music .MusicR ul img{border-radius:50%;}
+		 #Music .MusicR ul li:nth-child(2){text-align:center;line-height:25px;border-bottom:1px solid #ffffff;}
+ 		 #Music .MusicR .Text{height:310px;text-align:center;line-height:30px;overflow-X:hidden;}
+
+		 #Music .Footer{width:100%;height:80px;background:url("images/fbg.png");float:left;}
+		 .Text::-webkit-scrollbar{width:5px;background:#ccc;}
+		 .Text::-webkit-scrollbar-button{background-color:#e5e5e5;}
+		 .Text::-webkit-scrollbar-thumb{background:#999;}
+		
+		 
+		</style>
+		<link rel="stylesheet" href="css/rotate.css"><>
+
+	</head>
+	<body>
+		
+		<!--div盒子-->
+		<div id="Music">
+			<div class="MusicL">
+				<textread id="lrc" style="display:none">
+						[ti:风筝误]
+						[ar:刘珂矣]
+						[al:]
+
+
+						[00:00.00]
+						[00:01.98]风筝误
+						[00:04.99]作词：刘珂矣 百慕三石
+						[00:09.52]作曲：刘珂矣 百慕三石
+						[00:14.21]编曲/缩混：百慕三石
+						[00:19.20]演唱：刘珂矣
+						[00:25.09]
+						[00:40.55]梨花树下卷丝轮随风纷纷
+						[00:46.48]谁裁木鹊一缕魂落别村
+						[00:52.58]风影无心惊扰了对棋人
+						[00:58.69]幔里和诗怕春雨成盆
+						[01:03.90]
+						[01:05.05]玉指揽风风不住茜纱窗昏
+						[01:11.05]舟上摇波波不停渡影重温
+						[01:17.04]错认庭前过马人醉几分
+						[01:23.36]一抹笙香吹梦成真
+						[01:29.35]风筝误误了梨花花又开
+						[01:35.75]风筝误捂了金钗雪里埋
+						[01:41.81]风筝误悟满相思挂苍苔
+						[01:47.93]听雨声数几声风会来
+						[01:53.89]
+						[02:18.81]上元溪旁点烛荷千盏承诺
+						[02:24.82]怎捱雾锁红尘客阴差阳错
+						[02:30.96]阳台梦中风几里又几何
+						[02:37.21]梦醒推门她仍在研墨
+						[02:43.27]风筝误误了梨花花又开
+						[02:49.48]风筝误捂了金钗雪里埋
+						[02:55.67]风筝误悟满相思挂苍苔
+						[03:01.81]听雨声数几声风会来
+						[03:08.05]风筝误误了梨花花又开
+						[03:14.11]风筝误捂了金钗雪里埋
+						[03:20.28]风筝误悟满相思挂苍苔
+						[03:26.45]听雨声数几声风会来
+						[03:32.62]风筝误悟了一句情似露珠
+						[03:38.85]谁约我又在这风烟处
+						[03:44.20]风筝误
+						[03:47.86]
+						[03:51.84]
+ 
+				</textread>
+			</div>
+				
+			<div class="MusicR">
+				<ul>
+					<li><img class="rotate" src="images/liukeyi.jpg" width="145px" height="145px" alt="";></li>
+					<li>《风筝误》</li>
+				</ul>
+				<div class="Text"></div>
+			</div>
+			<div class="Footer"></div>
+		</div>
+	
+		<script src="js/jquery.js"></script>	
+		<script>
+			var lrc =$(#lrc).val();
+			var lrcArr = lrc.split("[");
+			var html = "";
+			for(var i=0;i<lrcArr.length;i++){
+				var arr=lrcArr[i].split("]");
+				var timer = arr[0].split(".");
+				var stime = timer[0].split(":");
+				console.log(stime)
+				var ms =stimer[0]*60+stime[1]*1;
+				var message =arr[1];
+
+				if(message){
+				html++"<p>"+message+"</p>"
+				}
+				$("Test").html(html);
+			}
+		</script>	
+
+	</body>
+</html>
