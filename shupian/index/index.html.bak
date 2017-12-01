@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>噜咪啦舌尖逛云南</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="st-container">
+				<audio id="audio" autoplay="autoplay" loop="loop">
+					<source src="music/RADWIMPS.mp3" type="audio/mpeg" codecs="mp3"></source>
+				</audio>
+
+				<!--nav 开始-->
+				<!--radio名字相同实现多项单选-->
+				<input type="radio" name="radio" checked="checked" id="st-container-1" />
+				<a href="#st-panel-1">惊喜番茄味</a>
+				<input type="radio" name="radio" id="st-container-2" />
+				<a href="#st-panel-2">任性烧烤味</a>
+				<input type="radio" name="radio" id="st-container-3" />
+				<a href="#st-panel-3">香茅草烤鱼味</a>
+				<input type="radio" name="radio" id="st-container-4" />
+				<a href="#st-panel-4">自然玉米味</a>
+				<input type="radio" name="radio" id="st-container-5" />
+				<a href="#st-panel-5">诱惑麻辣味</a>
+				<!--nav 结束-->
+
+				<div class="st-scroll">
+					<section class="st-panel" id="st-pannel-1">
+						<div class="st-desc" data-icon="H"></div>
+						<img class="pic1" src="img/fanqie.jpg" />
+
+						<style type="text/css">
+							.pic1 {
+								width:450px;
+								height:550px;
+								margin: 20px 200px 200px 30px;
+							}
+						</style>
+
+						<h2>
+							惊喜番茄味
+							<style type="text/css">
+								
+							</style>
+						</h2>
+						<p>不感受番茄爆汁的刺激 怎么知道丽江古城 动静结合的快感？
+
+						</p>
+					</section>
+
+					<section class="st-color st-panel" id="st-pannel-2">
+						<div class="st-desc" data-icon="2"></div>
+						<img class="pic2" src="img/shaokao.jpg" />
+						<style type="text/css">
+							.pic2 {
+							width:450px;
+								height:550px;
+								margin: 20px 200px 200px 30px;
+							}
+						</style>
+
+						<h2>任性烧烤味</h2>
+						<p>
+							不感受大理的放纵逍遥 怎么知道任性的滋味可以这么爽
+						</p>
+					</section>
+
+					<section class="st-panel" id="st-pannel-3">
+						<div class="st-desc" data-icon="B"></div>
+						<img class="pic3" src="img/kaoyu.jpg" />
+						<style type="text/css">
+							.pic3 {
+							width:450px;
+								height:550px;
+								margin: 20px 200px 200px 30px;
+							}
+						</style>
+
+						<h2>香茅草烤鱼味</h2>
+						<p>不感受泸沽湖如童话故事般的爱情        怎么知道纯洁的浪漫和爱情观？
+						</p>
+					</section>
+
+					<section class="st-panel st-color" id="st-pannel-4">
+						<div class="st-desc" data-icon="x"></div>
+						<img class="pic4" src="img/yumi.jpg" />
+						<style type="text/css">
+							.pic4 {
+								width:450px;
+								height:550px;
+								margin: 20px 200px 200px 30px;
+							}
+						</style>
+
+						<h2>自然玉米味</h2>
+						<p>不感受西双版纳的热浪朝天 怎么知道绿洲的自然清爽？ </p>
+					</section>
+
+					<section class="st-panel" id="st-pannel-5">
+						<div class="st-desc" data-icon="C"></div>
+						<img class="pic5" src="img/mala.jpg" />
+						<style type="text/css">
+							.pic5{
+								width:450px;
+								height:550px;
+								margin: 20px 200px 200px 30px;
+							}
+						</style>
+
+						<h2>诱惑麻辣味</h2>
+						<p>不感受昭通大山包黑颈鹤的美丽 怎么知道什么才能最诱惑你 </p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
